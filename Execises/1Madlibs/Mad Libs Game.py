@@ -1,0 +1,10 @@
+adjective1=input("Write an adjective : ")
+noun=input("Write an noun : ")
+adjective2=input("Write second adjective : ")
+verb=input("Write a verb with ing : ")
+adjective3=input("Write third adjective : ")
+
+print(f"I went to the {adjective1} hospital today")
+print(f"I saw {noun} in there")
+print(f"This {noun} was {adjective2} and {verb}")
+print(f"I was {adjective3}")
