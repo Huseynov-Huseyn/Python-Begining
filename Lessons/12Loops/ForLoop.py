@@ -32,3 +32,8 @@ for n in range(2, 10):
     else:
         # loop fell through without finding a factor
         print(n, 'is a prime number')
+
+# range() does not create a list, it returns a range object
+print(range(20))
+# sum() adds all numbers in range: 0 + 1 + ... + 19 = 190
+print(sum(range(20)))
