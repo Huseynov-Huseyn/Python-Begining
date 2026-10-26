@@ -1,0 +1,20 @@
+# print(help(fruits))
+fruits = ["Apple", "Orange", "Coconut", "Pineapple"]
+
+print(fruits)
+fruits.append("Lemon")
+print(fruits)
+fruits.remove("Lemon")
+print(fruits)
+fruits.insert(0, "Melon")
+print(fruits)
+fruits.sort()
+print(fruits)
+fruits.reverse()
+print(fruits)
+# Error when cannot find the String in list
+print(fruits.index("Apple"))
+print(fruits.count("Apple"))
+print(fruits.count("Apples"))
+fruits.clear()
+print(fruits)
