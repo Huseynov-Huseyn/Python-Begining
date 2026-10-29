@@ -1,5 +1,5 @@
 # List = [] ordered and changeable. Duplicate OK
-
+# Used when changing datas, size and same datatype
 fruits = ["Apple", "Orange", "Coconut", "Pineapple"]
 print(fruits)
 print(dir(fruits))
