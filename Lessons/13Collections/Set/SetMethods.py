@@ -7,3 +7,18 @@ fruits.remove("Apple")
 fruits.pop()
 fruits.clear()
 print(fruits)
+
+fruits = {"Apple", "Orange", "Coconut", "Pineapple"}
+fruits2 = {"Melon", "Watermelon", "Apple"}
+# fruits+fruits2
+fruits_all = fruits | fruits2
+print(fruits_all)
+# same value in fruits +fruits2
+fruits_all2 = fruits & fruits2
+print(fruits_all2)
+# fruits-fruits2
+fruits_all3 = fruits - fruits2
+print(fruits_all3)
+# different values in fruits_+fruits2
+fruits_all4 = fruits ^ fruits2
+print(fruits_all4)
