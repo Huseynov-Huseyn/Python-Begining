@@ -22,3 +22,11 @@ print(fruits_all3)
 # different values in fruits_+fruits2
 fruits_all4 = fruits ^ fruits2
 print(fruits_all4)
+
+names = ["Huseyn", "Vali", "Ali"]
+users = set(names)
+print(names)
+print(users)
+
+fruits_all5 = fruits.union(fruits2)
+print(fruits_all5)

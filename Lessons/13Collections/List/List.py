@@ -1,5 +1,7 @@
 # List = [] ordered and changeable. Duplicate OK
 # Used when changing datas, size and same datatype
+# lists can contain heterogeneous(Different) data types and objects
+# useful for creating nested data structures, such as a list of lists/dictionaries.
 fruits = ["Apple", "Orange", "Coconut", "Pineapple"]
 print(fruits)
 print(dir(fruits))

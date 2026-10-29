@@ -36,3 +36,22 @@ keys = ["USA", "Canada", "Turkiye"]
 values = ["Washington DC", "Ottawa", "Ankara"]
 d = dict(zip(keys, values))
 print(d)
+
+# 6. Creating a two-element dictionary using curly brackets
+employee = {
+    "Johnny": {"Male", 2500},
+    "Rebecca": {"Female", 1500}
+
+}
+
+employees = {
+    "Johnny": {"Gender": "Male", "Salary": 2500},
+    "Rebecca": {"Gender": "Female", "Salary": 1500}
+}
+print(employee)
+print(employee["Johnny"])
+
+employees["Violet"] = {"Gender": "Female", "Salary": 3000}
+
+print(employees)
+print(employees["Johnny"])
