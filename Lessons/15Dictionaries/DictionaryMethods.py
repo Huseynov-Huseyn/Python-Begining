@@ -71,3 +71,6 @@ stok.update(stok2)
 print(stok)
 
 print(Counter("Huseynov Huseyn"))
+
+# find Orange in the stok2 and if Orange doesn't have value, set default 0
+stok2["Orange"] = stok2.get("Orange", 0) + 1

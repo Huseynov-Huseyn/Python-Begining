@@ -20,7 +20,7 @@ print(cards)
 # Reproducibility / Determinism
 # with seed method, same value with random
 # In this class specified as a Number 42 and always get the same result
-# random.seed(42)
+random.seed(42)
 
 # Creating sub list of main list with quantity (no repetition)
 data = [10, 20, 30, 40, 50, 60]
