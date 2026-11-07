@@ -1,4 +1,6 @@
 class Car:
+    # Attribute = object's variable
+    # Method = object's function
     def __init__(self, model, year, color, for_sale):
         self.model = model
         self.year = year
