@@ -1,94 +1,92 @@
-# Python Beginning 🐍
+# Python Beginning
 
-A comprehensive collection of Python lessons, examples, and hands-on practice exercises designed for learning Python
-programming from the basics upwards.
+My notes and practice code while learning Python. The goal is to build a solid
+Python foundation before moving on to NumPy, pandas and machine learning.
 
-> ⚠️ **Note**: This repository is actively under development (Work in Progress). New topics, exercises, and examples are
-> added continuously.
+Every lesson is a small, runnable script with comments. Every exercise is a
+complete mini-program written after the matching lessons.
 
----
+## Repository structure
 
-## 📌 Project Overview
-
-This repository is structured into two main sections:
-
-- **`Lessons/`**: Step-by-step topic guides covering Python syntax, data types, control flow, collections, and built-in
-  methods.
-- **`Exercises/`**: Practical mini-projects and terminal-based programs applying concepts learned in the lessons.
-
----
-
-## 📂 Repository Structure
-
-### 📖 Lessons
-
-| #      | Topic                          | Description / Sub-topics                          |
-|--------|--------------------------------|---------------------------------------------------|
-| **01** | `1Begining`                    | Getting started, first Python script              |
-| **02** | `2Variables`                   | Variable types and assignment                     |
-| **03** | `3TypeCasting`                 | Numerical and categorical type casting            |
-| **04** | `4Input`                       | User input and casting inputs                     |
-| **05** | `5ArithmeticAndMath`           | Arithmetic operators, math functions & exercises  |
-| **06** | `6IfStatement`                 | Conditional statements (`if`, `elif`, `else`)     |
-| **07** | `7LogicalOperators`            | Logical operators (`and`, `or`, `not`)            |
-| **08** | `8ConditionalExpressions`      | Ternary conditional expressions                   |
-| **09** | `9StringMethods`               | Common string manipulation methods                |
-| **10** | `10StringIndexing`             | String slicing and indexing techniques            |
-| **11** | `11FormatSpecifiers`           | String formatting and format specifiers           |
-| **12** | `12Loops`                      | `while` loops, `for` loops, and nested loops      |
-| **13** | `13Collections`                | Lists, Sets, Tuples, and their respective methods |
-| **14** | `14Two-DimensionalCollections` | 2D lists/collections and practice exercises       |
-| **15** | `15Dictionaries`               | Key-value pairs, dictionary methods & lookups     |
-
----
-
-### 💻 Exercises & Practice Projects
-
-| #      | Project             | Description                                      |
-|--------|---------------------|--------------------------------------------------|
-| **01** | `1Madlibs`          | Interactive word game generating dynamic stories |
-| **02** | `2Calculator`       | Basic console arithmetic calculator              |
-| **03** | `3Convertor`        | Temperature and weight conversion tools          |
-| **04** | `4ValidateInput`    | User input validation routines                   |
-| **05** | `5CompoundInterest` | Financial compound interest calculator           |
-| **06** | `6CountDownTimer`   | Countdown timer and stopwatch programs           |
-| **07** | `7HollowRectangle`  | Pattern printing exercise (hollow rectangle)     |
-| **08** | `8Pyramid`          | Pyramid and diamond (romb) pattern printing      |
-| **09** | `9ShoppingCart`     | Shopping cart with price calculation             |
-| **10** | `10QuizGame`        | Interactive multiple-choice console quiz         |
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Python 3.10+ (configured with Python `>=3.15` via `pyproject.toml` / uv)
-
-### Running Lessons or Exercises
-
-You can run any script directly using Python:
-
-```bash
-# Run a specific lesson
-python Lessons/15Dictionaries/Dictionary.py
-
-# Run an exercise
-python Exercises/10QuizGame/QuizGameProgram.py
+```
+Python-Beginning/
+├── Lessons/       # one folder per topic, scripts with explanatory comments
+├── Exercises/     # practice programs, from easy to harder
+├── pyproject.toml # project metadata and dependencies
+└── uv.lock        # locked dependency versions
 ```
 
----
+## Getting started
 
-## 🛠️ Roadmap (Upcoming Topics)
+This project uses [uv](https://docs.astral.sh/uv/) for the environment.
 
-- [ ] Functions and Scope (`*args`, `**kwargs`)
-- [ ] Modules and Packages
-- [ ] Object-Oriented Programming (OOP)
-- [ ] File I/O & Exception Handling
-- [ ] Additional practice projects
+```bash
+git clone https://github.com/Huseynov-Huseyn/Python-Beginning.git
+cd Python-Beginning
+uv sync
+uv run python Lessons/17Functions/DefaultArguments.py
+```
 
----
+Some scripts use `matplotlib` (for example, the random numbers lesson). It is
+installed by `uv sync`.
 
-## 📄 License
+## Lessons
 
-This project is licensed under the terms included in the [LICENSE](LICENSE) file.
+| #  | Topic                                                                                                                                                         |
+|----|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1  | Beginning (first program, `print`)                                                                                                                            |
+| 2  | Variables and data types                                                                                                                                      |
+| 3  | Type casting                                                                                                                                                  |
+| 4  | User input                                                                                                                                                    |
+| 5  | Arithmetic, math and membership operators                                                                                                                     |
+| 6  | `if` statements                                                                                                                                               |
+| 7  | Logical operators                                                                                                                                             |
+| 8  | Conditional expressions (ternary operator)                                                                                                                    |
+| 9  | String methods                                                                                                                                                |
+| 10 | String indexing and slicing                                                                                                                                   |
+| 11 | Format specifiers                                                                                                                                             |
+| 12 | Loops: `for`, `while`, nested loops                                                                                                                           |
+| 13 | Collections: list, set, tuple, list comprehension                                                                                                             |
+| 14 | Two-dimensional collections                                                                                                                                   |
+| 15 | Dictionaries                                                                                                                                                  |
+| 16 | Random numbers and Gaussian distribution                                                                                                                      |
+| 17 | Functions: default, keyword and arbitrary arguments (`*args`, `**kwargs`)                                                                                     |
+| 18 | Iterables: comprehensions, generators, custom iterators                                                                                                       |
+| 19 | `match` / `case` statement                                                                                                                                    |
+| 20 | Modules                                                                                                                                                       |
+| 21 | Variable scope and the LEGB rule                                                                                                                              |
+| 22 | `if __name__ == "__main__"`                                                                                                                                   |
+| 23 | Object-oriented programming: classes, class variables, inheritance, class and static methods, multiple inheritance, `super()`, polymorphism, abstract classes |
+
+## Exercises
+
+| #  | Exercise                                                                                                                                                     |
+|----|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1  | Mad Libs game                                                                                                                                                |
+| 2  | Calculator                                                                                                                                                   |
+| 3  | Temperature and weight converters                                                                                                                            |
+| 4  | Input validation                                                                                                                                             |
+| 5  | Compound interest calculator                                                                                                                                 |
+| 6  | Countdown timer and stopwatch                                                                                                                                |
+| 7  | Hollow rectangle                                                                                                                                             |
+| 8  | Pyramid and diamond                                                                                                                                          |
+| 9  | Shopping cart                                                                                                                                                |
+| 10 | Quiz game                                                                                                                                                    |
+| 11 | Concession stand                                                                                                                                             |
+| 12 | Collections and dictionaries (favorite fruits, student grades, unique numbers, word counter, phone book, group by length, inventory manager, anagram groups) |
+| 13 | Random: dice roller, number guessing, rock paper scissors                                                                                                    |
+| 14 | Banking program (ATM)                                                                                                                                        |
+| 15 | Slot machine                                                                                                                                                 |
+| 16 | Encryption                                                                                                                                                   |
+| 17 | Hangman                                                                                                                                                      |
+| 18 | Tic-Tac-Toe (player vs. computer)                                                                                                                            |
+| 19 | Blackjack                                                                                                                                                    |
+
+## Notes
+
+- Code is written for learning, so comments explain the idea behind each topic.
+- Scripts are meant to be run one by one from the project root.
+
+## License
+
+See the [LICENSE](LICENSE) file.
