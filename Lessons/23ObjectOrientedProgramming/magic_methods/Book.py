@@ -10,6 +10,10 @@ class Book:
     def __str__(self):
         return f"{self.title} by {self.author}"
 
+    def __repr__(self):
+        class_name = type(self).__name__
+        return f"{class_name}(title={self.title!r}, author={self.author!r})"
+
     def __eq__(self, other):
         return self.title == other.title and self.author == other.author
 

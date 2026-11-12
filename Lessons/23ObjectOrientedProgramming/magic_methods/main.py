@@ -11,3 +11,7 @@ print(b1 + b2)
 print("Potter" in b1)
 print("Potter" in b3)
 print(b3["title"])
+# repr using for developer information
+print(repr(b2))
+# str using for user information
+print(str(b2))
